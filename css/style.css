@@ -1,0 +1,160 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --main: #0E3972;
+    --primary: #118D44;
+}
+
+/* Styling Header */
+.navbar-nav a{
+    color: var(--main) !important;
+    font-weight: 500;
+}
+/* Styling Header done */
+
+/* Styling Banner */
+#banner{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(../img/banner.jpg);
+  height: 80vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner h1{
+    color: var(--primary);
+    font-size: 50px !important;
+}
+/* Styling Banner done */
+
+/* Styling services */
+.servecont{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.servecont h5{
+    color: var(--primary);
+}
+.servecont .card{
+    width: 25rem;
+}
+/* Styling services done */
+
+/* Styling contact */
+#contact{
+    background-color: var(--main);
+}
+#contact h2{
+    color: #118D44;
+}
+#contact .container{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+#contact .icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+#contact .icon span{
+    color: var(--primary);
+}
+/* Styling contact done */
+
+
+
+@media (min-width: 100px) and (max-width: 320px) {
+#banner{
+  height: 50vh;
+}
+#banner h1{
+    font-size: 18px !important;
+}
+.servecont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.servecont .card{
+    width: 18rem;
+}
+#contact .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+#contact .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+#footer{
+    font-size: 13px;
+}
+}
+
+@media (min-width: 321px) and (max-width: 599px) {
+#banner{
+  height: 50vh;
+}
+#banner h1{
+    font-size: 20px !important;
+}
+.servecont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.servecont .card{
+    width: 20rem;
+}
+#contact .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+#contact .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+#footer{
+    font-size: 13px;
+}
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+#banner{
+  height: 60vh;
+}
+#banner h1{
+    font-size: 35px !important;
+}
+#about h2{
+    font-size: 40px !important;
+}
+#about p{
+    font-size: 20px !important;
+}
+}
